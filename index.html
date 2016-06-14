@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人网站</title>
+<link href="css/index.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/timeline.css">
+<script  src="js/jquery.min.js"></script>
+	    <link rel="stylesheet"  href="css/animate.css" />
+		<script  src="js/modernizr.custom.js"></script>
+		<script  src="js/jquery.cslider.js"></script>
+			<script>
+				/*文字流动*/
+				$(function() {
+				
+					$('#da-slider').cslider({
+						autoplay	: true,
+						bgincrement	: 450
+					});
+					$(".cbp_tmlabel").hover(function(){
+						$(this).find("p").finish();
+						$(this).find("p").slideDown(500);
+					},function(){
+						$(this).find("p").finish();
+
+						$(this).find("p").slideUp(500);
+					});
+				
+				});
+			</script>
+
+		 <!-- 返回顶部 -->
+		 <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop',
+					containerHoverID: 'toTopHover',
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+
+	<style>
+
+		@font-face {
+			font-family: 'iconfont';
+			src: url('font/iconfont.eot'); /* IE9*/
+			src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('font/iconfont.woff') format('woff'), /* chrome、firefox */
+			url('font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+		}
+
+
+
+
+
+		.font{
+			font-size:50px;
+			font-family: 'iconfont';
+			background: orange;
+			border-radius:50%;
+			color:#fff;
+			line-height: 100px;
+			width: 100px;
+			height: 100px;
+			text-align: center;
+			margin:0 auto;
+			margin-bottom:10px;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-stroke-width: 0.2px;
+			-moz-osx-font-smoothing: grayscale;
+
+		}
+		.font1{
+			font-size:50px;
+			font-family: 'iconfont';
+			border-radius:50%;
+			color:#fff;
+			text-align: center;
+			margin:auto;
+			left:0;top:20px;bottom:0;
+			right:0;
+			z-index: 10;
+			position: absolute;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-stroke-width: 0.2px;
+			-moz-osx-font-smoothing: grayscale;
+
+		}
+		.font:hover{
+			cursor: pointer;
+			background: darkorange;
+			transform: rotate(360deg);
+			transition: background .3s linear,transform .7s linear;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- toubu -->
+<div class="slider_bg">
+	<div class="wrap">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""/></a>
+				</div>
+		<div class="h_right">
+			<ul class="menu">		
+				<li class="active"><a  href="#home">Home</a></li>
+				<li><a href="#aboutme" class="scroll">About Me</a></li>
+				<li><a href="#services" class="scroll">Skills</a></li>
+				<li><a href="#portfolio" class="scroll">MY Work</a></li>
+				<li><a href="#about" class="scroll">MY games</a></li>
+				<li class="last"><a href="#contact"  class="scroll">Contact</a></li>
+			</ul>			
+			<!-- start smart_nav * -->
+	        <nav class="nav">
+	            <ul class="nav-list">
+	                <li class="nav-item"><a  href="#home">Home</a>
+					<li class="nav-item"><a href="#aboutme" class="scroll">About Me</a></li>
+	                <li class="nav-item"><a href="#services" class="scroll">Skills</a></li>
+	                <li class="nav-item"><a href="#portfolio" class="scroll">MY Work</a></li>
+	                <li class="nav-item"><a href="#about" class="scroll">About</a></li>
+	                <li class="nav-item"><a href="#contact"  class="scroll">Contact</a></li>
+	                <div class="clear"></div>
+	            </ul>
+	        </nav>
+	        <script type="text/javascript" src="js/responsive.menu.js"></script>
+			<!-- end smart_nav * -->
+		</div>
+		<div class="clear"></div>
+
+			</div>
+			</div>
+			<!---//End-headerstart main -->
+				<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<p>HELLO Every One!</p>
+					<h2>Welcome To My Website</h2>
+					<p class="a"><a href="#aboutme">TELL YOU MORE</a></p>
+				</div>
+				<div class="da-slide">
+					<p>I AM A GOOD</p>
+					<h2>front end engineer</h2>
+					<p class="a"><a href="#aboutme">TELL YOU MORE</a></p>
+				</div>
+				<div class="da-slide">
+					<p>IT'S ME !</p>
+					<h2>I&nbsp; &nbsp;AM&nbsp; &nbsp;YatoubuchouWeb </h2>
+					<p class="a"><a href="#aboutme">TELL YOU MORE</a></p>
+				</div>
+				<div class="da-slide">
+					<p>IF If a thing is worth doing</p>
+					<h2>  it is worth doing well</h2>
+					<p class="a"><a href="#aboutme">TELL YOU MORE</a></p>
+				</div>	
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>
+	<!-- -abouts me---> -->
+	<div class="team-members" id="aboutme">
+		<div class="wrap">
+			<div class="tm-head">
+				<h3>IT'S ME</h3>
+				<p>I am a girl who loves life!</p>
+			</div>
+			<div class="tm-head-grids">
+				<div class="tm-head-grid col_1_of_3">
+					<img src="images/11.jpg" alt="" />
+				</div>
+				<div class="aboutme1">
+				<div class="team-info"><h2>I am yangpeipei</h2></div>
+				<div class="team-info1">There are many variations of passages!</div>
+				<div class="team-info7"><img src="images/logo1.png" alt=""></div>
+				<div class="clear"> </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+ 		<!-- skills -->
+ 		</div>
+		  <div class="services" id="services">
+		  	<div class="wrap">
+		  		<h3>MY Skills</h3>
+		  		<p>My professional skills</p>
+				<div class="col_1_of_3 span_1_of_3">
+					<div class="font">&#xe603</div>
+					<h4><a href="#">PS </a></h4>
+					<p class="conn">大学在校期间，熟练掌握了ps图像处理软件，也考取了ps证书</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<div class="font">&#xe602</div>
+					<h4><a href="#">Javascript </a></h4>
+					<p class="conn">熟练使用js进行页面效果的实现例如：模仿的天猫网站、京东网站等都是通过js实现的动态</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<div class="font">&#xe608</div>
+					<h4><a href="#">HTML5</a></h4>
+					<p class="conn">熟练运用HTML5，熟悉语义化的标签，能够熟练解决兼容问题</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<div class="font">&#xe609</div>
+					<h4><a href="#">CSS3</a></h4>
+					<p class="conn">熟练运用CSS3，熟练使用CSS3进行动画效果的实现</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<div class="font">&#xe604</div>
+					<h4><a href="#">JQuery</a></h4>
+					<p class="conn">精通Jquery框架，并熟练运用进行页面效果的实现</p>
+				</div>
+				<div class="col_1_of_33 span_1_of_33">
+					<div class="font">&#xe607</div>
+					<h4><a href="#">Angular</a></h4>
+					<p class="conn">了解Angulard.js的基本指令、用法及Angular的数据双向绑定</p>
+				</div>
+
+
+				 <div class="clear"></div>
+   		   </div>
+   		 </div>
+ 		<div class="portfolio" id="portfolio">
+		  	<div class="wrap">
+		  		<h3>MY Work</h3>
+		  		<p>Works Show</p>
+			<div class="col_1_of_3 span_1_of_3">
+					  <div class="view view-fourth">
+                        <img src="images/yintai.jpg">
+	                    <div class="mask">
+	                        <h2>银泰</h2>
+	                        <a href="../yintai/index.html" class="info">More&nbsp;+</a>
+	                    </div>
+                	</div>
+					<!-- <h4><a href="#">银泰网站</a></h4> -->
+				     <p>yintai Website</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					 <div class="view view-fourth">
+                        <img src="images/jingdong1.jpg">
+	                    <div class="mask">
+	                        <h2>京东</h2>
+	                        <a href="../jingdong/index.html" class="info">More&nbsp;+</a>
+	                    </div>
+                	</div>
+					<!-- <h4><a href="#">京东网站</a></h4> -->
+					<p>JD Website</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					 <div class="view view-fourth">
+                        <img src="images/yidong.jpg">
+	                    <div class="mask">
+	                        <h2>移动</h2>
+	                        <a href="../yidong/index.html" class="info">More&nbsp;+</a>
+	                    </div>
+                	</div>
+					<!-- <h4><a href="#">移动网站</a></h4> -->
+					<p>yidong Website</p>
+				</div>
+			  <div class="col_1_of_3 span_1_of_3">
+					 <div class="view view-fourth">
+                        <img src="images/th.png">
+	                    <div class="mask">
+	                        <h2>太化地产</h2>
+	                        <a href="http://www.taihuadichan.com/index.php" class="info">More&nbsp;+</a>
+	                    </div>
+                	</div>
+				 <!-- <h4><a href="#">太化网站</a></h4>-->
+				  <p>taihua Website</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					  <div class="view view-fourth">
+                        <img src="images/weixin.jpg">
+	                    <div class="mask">
+	                        <h2>微信</h2>
+							<a href="../weixin/index.html" class="info">More&nbsp;+</a>
+						</div>
+					  </div>
+					<!--<h4><a href="#">PS 图标</a></h4>-->
+					<p>weixin Show</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					 <div class="view view-fourth">
+                        <img src="images/baidu.jpg">
+	                    <div class="mask">
+	                        <h2>百度舆情</h2>
+							<a href="../baiduyuqing/index.html" class="info">More&nbsp;+</a>
+						</div>
+					 </div>
+					<!--<h4><a href="#">网易网站</a></h4>-->
+					<p>baidu Website</p>
+				</div>
+			<div class="clear"></div>								  						
+			</div>   		 
+   		 </div>
+	<div class="about" id="about">
+			<h3>MY Games</h3>
+			<p class="a">something  myself design games</p>
+	<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<div class="font1">&#xe605</div>
+			</div>
+
+			<div class="cd-timeline-content">
+				<h2>五子棋游戏</h2>
+				<p>利用html5中的canvas以及js代码实现五子棋游戏</p>
+				<a href="../wzq/index.html" class="cd-read-more">点击观看</a>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<div class="font1">&#xe601</div>
+			</div>
+
+			<div class="cd-timeline-content">
+				<h2>打字游戏</h2>
+				<p>利用js实现的打字游戏，可以锻炼思维能力，使我们更好地了解Javascript</p>
+				<a href="http://lhnweb.duapp.com/writegame/games.html" class="cd-read-more">点击查看</a>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<div class="font1">&#xe606</div>
+			</div>
+
+			<div class="cd-timeline-content">
+				<h2>todos</h2>
+				<p>利用js实现的贪吃蛇、扫雷、扑克牌等游戏</p>
+				<a href="../todos/index.html" class="cd-read-more">点击查看</a>
+			</div>
+		</div>
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<div class="font1">&#xe600</div>
+			</div>
+
+			<div class="cd-timeline-content">
+				<h2>钟表</h2>
+				<p>利用bootstrap的css和js以及表单验证等功能，实现了对备忘录增删改查的功能</p>
+				<a href="../biao/index.html" class="cd-read-more">点击查看</a>
+			</div>
+		</div>
+	</section>
+		</div>
+                  <div class="t-clients">
+                  	<div class="wrap"> 											 
+							<div class="nbs-flexisel-container">
+								<div class="nbs-flexisel-inner">
+									<ul class="flexiselDemo3 nbs-flexisel-ul" style="left: -253.6px; display: block;">
+							<li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;">
+								<img src="images/mihoutao.png"></li>
+										<li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;">
+											<img src="images/xiaotiqing.png"></li>
+										<li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;">
+											<img src="images/xiangji.png"></li>
+										<li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;">
+											<img src="images/image1.png"></li>
+										<li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;">
+											<img src="images/image2.png">
+										</li>
+									</ul>
+									<div class="nbs-flexisel-nav-left" style="top: 21.5px;"></div>
+									<div class="nbs-flexisel-nav-right" style="top: 21.5px;"></div>
+								</div>
+							</div>
+							<div class="clear"> </div>      
+
+								<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+						<script>
+							$(function(){
+								var $timeline_block = $('.cd-timeline-block');
+
+								$timeline_block.each(function(){
+									if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+										$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+									}
+								});
+
+								$(window).on('scroll', function(){
+									$timeline_block.each(function(){
+										if( $(this).offset().top<= $(window).scrollTop()+$(window).height()*0.75&& $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+											$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+										}
+									});
+								});
+							});
+						</script>
+
+								<script type="text/javascript">
+								$(window).load(function() {
+								    $(".flexiselDemo3").flexisel({
+								        visibleItems: 5,
+								        animationSpeed: 1000,
+								        autoPlay: true,
+								        autoPlaySpeed: 3000,            
+								        pauseOnHover: true,
+								        enableResponsiveBreakpoints: true,
+								        responsiveBreakpoints: { 
+								            portrait: { 
+								                changePoint:480,
+								                visibleItems: 1
+								            }, 
+								            landscape: { 
+								                changePoint:640,
+								                visibleItems: 2
+								            },
+								            tablet: { 
+								                changePoint:768,
+								                visibleItems: 3
+								            }
+								        }
+								    });
+								});
+								</script>
+				  </div>				
+			</div>
+             <div class="contact" id="contact">
+		  	<div class="wrap">
+		  		<h3>CONTACT US</h3>
+		  		<p class="a">This is my personal home page, including my personal information and work, if you like, please contact me</p>
+				<div class="form">
+				     <div class="form-text">
+					    <input type="text" class="textbox" value="Your Name*" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
+						<input type="text" class="textbox" value="Your E-mail*" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'E-mail';}">
+						<input name="Website" type="text" class="Subject" value="Website" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Website';}">
+					</div>
+						 <textarea placeholder="Your Message*"></textarea>
+						 <div class="clear"> </div>
+						 <input type="submit" value="SEND MESSAGE">					 
+				 </div>
+   		   </div>
+   		 </div>
+         <!----start-bottom-footer---->
+				<div class="bottom-footer">
+					<div class="wrap"> 
+						<div class="bottom-footer-left">
+
+						</div>
+						<div class="bottom-footer-center">
+							<ul class="bottom-social-icons">
+								<li><a class="bottom-twitter" href="#"> </a></li>
+								<li><a class="bottom-facebook" href="#"> </a></li>
+								<li><a class="bottom-pin" href="#"> </a></li>
+								<li><a class="bottom-google" href="#"> </a></li>
+								<div class="clear"> </div>
+							</ul>
+						</div>			  
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<!----//End-bottom-footer---->
+ <!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+
+</body>
+</html>
